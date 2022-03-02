@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const StyledSearchContainer = styled.form`
   position: relative;
+  margin-top: 20px;
 
   input {
     background-color: #fafafa;
