@@ -35,6 +35,7 @@ const Icons = {
   Edit: RiEdit2Fill,
   User: RiUser3Fill,
   UserMenu: RiAccountCircleFill,
+  Send: RiSendPlaneFill,
 };
 
 export default Icons;

@@ -2,17 +2,17 @@ import React from 'react';
 import ProfileModal from '../modal/ProfileModal';
 import Menu from './Menu';
 import Search from './Search';
+import { StyledHeader } from './styles/header';
 
 const Header = () => {
   return (
-    <div>
-      <div>
-        <h1>Instagram Clone</h1>
-      </div>
+    <StyledHeader>
+      <h1>Instagram Clone</h1>
+
       <Search />
       <Menu />
       <ProfileModal />
-    </div>
+    </StyledHeader>
   );
 };
 
