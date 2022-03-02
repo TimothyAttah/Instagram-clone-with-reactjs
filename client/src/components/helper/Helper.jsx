@@ -27,3 +27,24 @@ export const navMenu = [
     icon: <Icons.UserMenu />,
   },
 ];
+
+export const dummyUser = [
+  {
+    id: 1,
+    name: 'user01',
+    avatar: '',
+    fullName: 'Jane doe',
+  },
+  {
+    id: 2,
+    name: 'user02',
+    avatar: '',
+    fullName: 'John doe',
+  },
+  {
+    id: 3,
+    name: 'user03',
+    avatar: '',
+    fullName: 'Faith Ken',
+  },
+];
