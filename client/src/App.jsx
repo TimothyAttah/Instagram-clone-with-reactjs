@@ -1,25 +1,27 @@
 import React from 'react';
-
-// export const AppContainer = styled.div`
-//   #theme:checked ~ .App {
-//     filter: invert(1);
-//   }
-
-//   .App {
-//     width: 100%;
-//     min-height: 100vh;
-//     background: #fff;
-//   }
-
-//   .main {
-//     max-width: 1000px;
-//     width: 100%;
-//     margin: auto;
-//   }
-// `;
+import { ThemeProvider } from 'styled-components';
+import Header from './components/header/Header';
+import {
+  StyledAppContainer,
+  StyledAppWrapper,
+  StyledMainContainer,
+} from './styles/app';
+import theme from './themes/theme';
 
 const App = () => {
-  return <h1>Hello world</h1>;
+  return (
+    <ThemeProvider theme={theme}>
+      <StyledAppContainer>
+        <input type='checkbox' id='theme' />
+        <StyledAppWrapper className='App'>
+          <Header />
+          <StyledMainContainer>
+            <h1>Hello world</h1>
+          </StyledMainContainer>
+        </StyledAppWrapper>
+      </StyledAppContainer>
+    </ThemeProvider>
+  );
 };
 
 export default App;
