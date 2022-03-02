@@ -7,8 +7,8 @@ import {
   RiDeleteBin5Line,
   RiCloseFill,
   RiLoaderFill,
-  RiMore2Fill, // vertical line
-  RiMoreFill, // horizontal line
+  RiMore2Fill,
+  RiMoreFill,
   RiSearchLine,
   RiThumbUpFill,
   RiThumbUpLine,
@@ -17,3 +17,24 @@ import {
   RiChat3Line,
   RiEdit2Fill,
 } from 'react-icons/ri';
+
+const Icons = {
+  Home: RiHome4Fill,
+  FavoriteBold: RiHeartFill,
+  Favorite: RiHeartLine,
+  Discover: RiCompass3Fill,
+  Delete: RiDeleteBin5Line,
+  Close: RiCloseFill,
+  Comment: RiChat3Line,
+  MoreHoriz: RiMoreFill,
+  MoreVert: RiMore2Fill,
+  Loader: RiLoaderFill,
+  Search: RiSearchLine,
+  ThumbUpBold: RiThumbUpFill,
+  ThumbUp: RiThumbUpLine,
+  Edit: RiEdit2Fill,
+  User: RiUser3Fill,
+  UserMenu: RiAccountCircleFill,
+};
+
+export default Icons;
