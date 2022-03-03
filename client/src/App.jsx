@@ -9,6 +9,7 @@ import {
 } from './styles/app';
 import theme from './themes/theme';
 import Home from './pages/Home';
+import ErrorPage from './pages/error/ErrorPage';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
             <StyledMainContainer>
               <Routes>
                 <Route path='/' element={<Home />} />
+                <Route path='*' element={<ErrorPage />} />
               </Routes>
             </StyledMainContainer>
           </StyledAppWrapper>
