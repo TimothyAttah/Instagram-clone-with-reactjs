@@ -20,7 +20,7 @@ export const StyledMenu = styled.nav`
 
   .active {
     a {
-      color: #121212;
+      color: ${({ theme }) => theme.lightDark};
     }
   }
 
@@ -28,10 +28,10 @@ export const StyledMenu = styled.nav`
     width: 100%;
     margin: 20px 0;
     ul {
-      box-shadow: 0 0 10px #ddd;
+      box-shadow: 0 0 10px ${({ theme }) => theme.lightGray};
       z-index: 2;
-      background: #f8f9fa;
-      border: 1px solid rgb(0, 0, 0, 0.125);
+      background: ${({ theme }) => theme.bgColor};
+      border: 1px solid ${({ theme }) => theme.rgbColor};
       justify-content: space-between;
       padding: 3px 0;
 

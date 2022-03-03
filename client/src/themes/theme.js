@@ -6,9 +6,10 @@ const theme = {
   lightBlue: ' #fcb4cd',
   gray: '#ccc',
   lightGray: '#ddd',
-  lightYellow: '#fafafa',
+  lightPrimary: '#fafafa',
   bgColor: '#f8f9fa',
   rgbColor: 'rgb(0, 0, 0, 0.125)',
+  lightDark: '#121212',
 };
 
 export default theme;

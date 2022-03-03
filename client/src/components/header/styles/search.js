@@ -5,8 +5,8 @@ export const StyledSearchContainer = styled.form`
   margin-top: 20px;
 
   input {
-    background-color: #fafafa;
-    border: 1px solid #ddd;
+    background-color: ${({ theme }) => theme.lightPrimary};
+    border: 1px solid ${({ theme }) => theme.lightGray};
     min-width: 250px;
     text-indent: 0.3125rem;
     border-radius: 3px;
@@ -25,12 +25,15 @@ export const StyledSearchIcon = styled.div`
   transform: translate(-50%, -50%);
   font-size: 12px;
   pointer-events: none;
-  color: #000;
+  color: ${({ theme }) => theme.textDark};
   display: flex;
   align-items: center;
 
   span:first-child {
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding-right: 3px;
   }
 `;
 
