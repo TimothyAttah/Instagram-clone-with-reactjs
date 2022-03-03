@@ -8,6 +8,7 @@ const initialState = {
 };
 
 export const posts = (state = initialState, action) => {
+  console.log('ACTION_TYPES>>>>>>', action);
   switch (action.type) {
     case POST_TYPES.LOADING_POST:
       return {
