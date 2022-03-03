@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const StyledMenu = styled.nav`
-  /* display: flex; */
   ul {
     display: flex;
     align-items: center;
@@ -25,7 +24,7 @@ export const StyledMenu = styled.nav`
     }
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 620px) {
     width: 100%;
     ul {
       /* box-shadow: 0 0 10px ${({ theme }) => theme.lightGray};

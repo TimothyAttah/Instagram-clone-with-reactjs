@@ -10,6 +10,10 @@ export const StyledProfileMenuHandle = styled.div`
   padding-left: 50px;
   position: relative;
   cursor: pointer;
+
+  @media (max-width: 320px) {
+    padding-left: 10px;
+  }
 `;
 
 export const StyledProfileMenu = styled.ul`
