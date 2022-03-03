@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
+import { posts } from './postReducer';
 
 const reducers = combineReducers({
-  hello: () => 1,
+  posts,
 });
 
 export default reducers;
