@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import Icons from '../icons/Icons';
+import { images } from '../images';
 import { StyledAvatar } from '../styles/avatar';
 import {
   StyledProfileMenuHandle,
@@ -24,7 +25,7 @@ const ProfileModal = () => {
     <StyledProfileContainer>
       <StyledProfileMenuHandle onClick={() => setOpenMenu(!openMenu)}>
         <StyledAvatar small>
-          <Icons.UserMenu />
+          <img src={images.Alex} alt='' />
         </StyledAvatar>
         <span>
           <Icons.ArrowDown />
@@ -48,3 +49,4 @@ const ProfileModal = () => {
 };
 
 export default ProfileModal;
+<Icons.UserMenu />;

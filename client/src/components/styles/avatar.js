@@ -12,6 +12,10 @@ export const StyledAvatar = styled.div`
   border-radius: 50%;
   justify-content: center;
 
+  img {
+    width: 100%;
+  }
+
   ${(props) =>
     props.big &&
     css`

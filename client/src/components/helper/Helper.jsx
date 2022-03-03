@@ -1,4 +1,5 @@
 import Icons from '../icons/Icons';
+import { images } from '../images';
 
 export const navMenu = [
   {
@@ -21,11 +22,6 @@ export const navMenu = [
     path: '/favorite',
     icon: <Icons.FavoriteBold />,
   },
-  // {
-  //   label: 'Menu',
-  //   path: '/menu',
-  //   icon: <Icons.UserMenu />,
-  // },
 ];
 
 export const dummyUser = [
@@ -38,7 +34,7 @@ export const dummyUser = [
   {
     id: 2,
     name: 'user02',
-    avatar: '',
+    avatar: images.Alex,
     fullName: 'John doe',
   },
   {
