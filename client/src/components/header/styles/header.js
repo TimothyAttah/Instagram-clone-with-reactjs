@@ -25,3 +25,19 @@ export const StyledHeader = styled.nav`
     flex-direction: column;
   }
 `;
+
+export const StyledNavContainer = styled.div`
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px ${({ theme }) => theme.lightGray};
+  z-index: 2;
+  background: ${({ theme }) => theme.bgColor};
+  border: 1px solid ${({ theme }) => theme.rgbColor};
+  justify-content: space-between;
+  padding: 3px 0;
+
+  @media (max-width: 900px) {
+    width: 100%;
+    margin: 20px 0;
+  }
+`;

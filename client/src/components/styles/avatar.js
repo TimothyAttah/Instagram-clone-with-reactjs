@@ -17,6 +17,7 @@ export const StyledAvatar = styled.div`
     css`
       width: 150px;
       height: 150px;
+      font-size: 150px;
     `}
 
   ${(props) =>
@@ -24,6 +25,7 @@ export const StyledAvatar = styled.div`
     css`
       width: 80px;
       height: 80px;
+      font-size: 80px;
     `}
 
     ${(props) =>
@@ -31,6 +33,14 @@ export const StyledAvatar = styled.div`
     css`
       width: 40px;
       height: 40px;
+      font-size: 40px;
+    `}
+
+    ${(props) =>
+    props.smaller &&
+    css`
+      width: 30px;
+      height: 30px;
       font-size: 30px;
     `}
 `;

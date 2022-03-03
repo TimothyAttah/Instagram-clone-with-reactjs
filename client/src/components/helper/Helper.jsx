@@ -21,11 +21,11 @@ export const navMenu = [
     path: '/favorite',
     icon: <Icons.FavoriteBold />,
   },
-  {
-    label: 'Menu',
-    path: '/menu',
-    icon: <Icons.UserMenu />,
-  },
+  // {
+  //   label: 'Menu',
+  //   path: '/menu',
+  //   icon: <Icons.UserMenu />,
+  // },
 ];
 
 export const dummyUser = [
