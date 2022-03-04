@@ -1,4 +1,4 @@
-import { POST_TYPES } from '../types';
+import { DeleteData, EditData, POST_TYPES } from '../types';
 import { images } from '../../components/images';
 
 const initialState = {
@@ -63,6 +63,18 @@ export const posts = (state = initialState, action) => {
         // posts: action.payload.posts,
         // result: action.payload.result,
         // page: action.payload.page,
+      };
+
+    case POST_TYPES.UPDATE_POST:
+      return {
+        ...state,
+        posts: EditData(state.posts, action.payload._id, action.payload),
+      };
+
+    case POST_TYPES.DELETE_POST:
+      return {
+        ...state,
+        posts: DeleteData(state.posts, action.payload),
       };
 
     default:

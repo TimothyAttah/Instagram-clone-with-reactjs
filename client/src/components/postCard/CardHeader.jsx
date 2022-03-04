@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import moment from 'moment';
+import { useDispatch } from 'react-redux';
 import { StyledAvatar } from '../styles/avatar';
 import Icons from '../icons/Icons';
 import { auth } from '../helper/Helper';
+import { deletePost } from '../../redux/actions/postAction';
 import {
   StyledCardHeader,
   StyledCardHeaderWrapper,
@@ -15,6 +17,12 @@ import {
 
 const CardHeader = ({ post }) => {
   const [openMenu, setOpenMenu] = useState(false);
+  const dispatch = useDispatch();
+
+  const handleDelete = (id) => {
+    dispatch(deletePost(id));
+  };
+
   return (
     <StyledCardHeader>
       <StyledCardHeaderWrapper>
@@ -46,7 +54,7 @@ const CardHeader = ({ post }) => {
                   </span>
                   Edit Post
                 </StyledDropDownItem>
-                <StyledDropDownItem>
+                <StyledDropDownItem onClick={() => handleDelete(post._id)}>
                   <span>
                     <Icons.Delete />
                   </span>

@@ -9,3 +9,14 @@ export const getPosts = () => async (dispatch) => {
     console.log(err);
   }
 };
+
+export const deletePost = (post) => async (dispatch) => {
+  try {
+    dispatch({
+      type: POST_TYPES.DELETE_POST,
+      payload: post,
+    });
+  } catch (err) {
+    console.log(err);
+  }
+};
