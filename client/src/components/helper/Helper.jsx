@@ -9,7 +9,7 @@ export const navMenu = [
   },
   {
     label: 'Send',
-    path: '/send',
+    path: '/message',
     icon: <Icons.Send />,
   },
   {
@@ -19,7 +19,7 @@ export const navMenu = [
   },
   {
     label: 'Favorite',
-    path: '/favorite',
+    path: '/notify',
     icon: <Icons.FavoriteBold />,
   },
 ];

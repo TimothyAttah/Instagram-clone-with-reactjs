@@ -12,15 +12,17 @@ export const StyledHeader = styled.nav`
   border: 1px solid ${({ theme }) => theme.rgbColor};
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
 
   a {
-    flex-grow: 1;
+    /* flex-grow: 1; */
     color: ${({ theme }) => theme.textDark};
     text-transform: uppercase;
     font-weight: bold;
   }
 
-  @media (max-width: 620px) {
+  @media (max-width: 675px) {
     flex-direction: column;
   }
 `;
@@ -35,7 +37,7 @@ export const StyledNavContainer = styled.div`
   justify-content: space-between;
   padding: 3px 0;
 
-  @media (max-width: 620px) {
+  @media (max-width: 675px) {
     width: 100%;
     margin: 20px 0;
     box-shadow: 0 0 10px ${({ theme }) => theme.lightGray};

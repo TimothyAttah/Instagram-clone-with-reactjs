@@ -20,7 +20,7 @@ export const StyledSearchContainer = styled.form`
     margin-right: 20px;
   }
 
-  @media (max-width: 620px) {
+  @media (max-width: 675px) {
     margin-top: 20px;
   }
 `;

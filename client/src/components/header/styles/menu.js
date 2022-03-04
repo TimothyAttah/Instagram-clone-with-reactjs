@@ -24,7 +24,7 @@ export const StyledMenu = styled.nav`
     }
   }
 
-  @media (max-width: 620px) {
+  @media (max-width: 675px) {
     width: 100%;
     ul {
       /* box-shadow: 0 0 10px ${({ theme }) => theme.lightGray};
