@@ -6,6 +6,7 @@ const theme = {
   lightBlue: ' #fcb4cd',
   gray: '#ccc',
   lightGray: '#ddd',
+  darkGray: '#eee',
   lightPrimary: '#fafafa',
   bgColor: '#f8f9fa',
   rgbColor: 'rgb(0, 0, 0, 0.125)',

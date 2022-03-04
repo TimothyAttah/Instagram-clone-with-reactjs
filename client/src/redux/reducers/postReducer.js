@@ -60,9 +60,9 @@ export const posts = (state = initialState, action) => {
     case POST_TYPES.GET_POSTS:
       return {
         ...state,
-        posts: action.payload.posts,
-        result: action.payload.result,
-        page: action.payload.page,
+        // posts: action.payload.posts,
+        // result: action.payload.result,
+        // page: action.payload.page,
       };
 
     default:
