@@ -35,7 +35,7 @@ export const StyledNavContainer = styled.div`
   background: ${({ theme }) => theme.bgColor};
   border: 1px solid ${({ theme }) => theme.rgbColor}; */
   justify-content: space-between;
-  padding: 3px 0;
+  padding: 3px 5px;
 
   @media (max-width: 675px) {
     width: 100%;

@@ -18,6 +18,8 @@ import {
   RiEdit2Fill,
   RiArrowDownSFill,
   RiCopyrightLine,
+  RiSendPlaneLine,
+  RiBookmarkLine,
 } from 'react-icons/ri';
 
 const Icons = {
@@ -38,8 +40,10 @@ const Icons = {
   User: RiUser3Fill,
   UserMenu: RiAccountCircleFill,
   Send: RiSendPlaneFill,
+  SendSharp: RiSendPlaneLine,
   ArrowDown: RiArrowDownSFill,
   Copy: RiCopyrightLine,
+  Bookmark: RiBookmarkLine,
 };
 
 export default Icons;

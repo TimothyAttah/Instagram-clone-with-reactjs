@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const StyledSearchContainer = styled.form`
   position: relative;
-  margin-right: 100px;
   input {
     background-color: ${({ theme }) => theme.lightPrimary};
     border: 1px solid ${({ theme }) => theme.lightGray};
@@ -17,7 +16,7 @@ export const StyledSearchContainer = styled.form`
   }
 
   @media (max-width: 900px) {
-    margin-right: 20px;
+    /* margin-right: 20px; */
   }
 
   @media (max-width: 675px) {

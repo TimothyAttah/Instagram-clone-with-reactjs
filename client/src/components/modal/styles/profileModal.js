@@ -12,11 +12,11 @@ export const StyledProfileMenuHandle = styled.div`
   padding-left: 15px;
 
   @media (max-width: 675px) {
-    padding-left: 50px;
+    /* padding-left: 50px; */
   }
 
   @media (max-width: 320px) {
-    padding-left: 10px;
+    /* padding-left: 10px; */
   }
 `;
 
