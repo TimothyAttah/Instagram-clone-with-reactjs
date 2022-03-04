@@ -37,7 +37,7 @@ const initialState = {
       comments: [],
       user: {
         avatar: images.Alex,
-        _id: '3',
+        _id: '1',
         username: 'user01',
       },
       createdAt: new Date(),

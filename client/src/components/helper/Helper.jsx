@@ -44,3 +44,12 @@ export const dummyUser = [
     fullName: 'Faith Ken',
   },
 ];
+
+export const auth = {
+  user: {
+    _id: '1',
+    username: 'user01',
+    followers: [],
+    following: [],
+  },
+};

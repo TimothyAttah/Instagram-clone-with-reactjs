@@ -17,6 +17,7 @@ import {
   RiChat3Line,
   RiEdit2Fill,
   RiArrowDownSFill,
+  RiCopyrightLine,
 } from 'react-icons/ri';
 
 const Icons = {
@@ -38,6 +39,7 @@ const Icons = {
   UserMenu: RiAccountCircleFill,
   Send: RiSendPlaneFill,
   ArrowDown: RiArrowDownSFill,
+  Copy: RiCopyrightLine,
 };
 
 export default Icons;
