@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Carousel from '../Carousel';
 import { StyledCardBodyContent, StyledReadMore } from './style/cardBody';
 
 const CardBody = ({ post }) => {
@@ -20,6 +21,9 @@ const CardBody = ({ post }) => {
           </StyledReadMore>
         )}
       </StyledCardBodyContent>
+      {post.images.length > 0 && (
+        <Carousel images={post.images} id={post._id} />
+      )}
     </div>
   );
 };
