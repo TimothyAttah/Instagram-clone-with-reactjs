@@ -5,8 +5,8 @@ const initialState = {
   loading: false,
   posts: [
     {
-      content: 'This is post one',
-      images: images.PostOne,
+      content: `Andrew is the best when it comes to teaching programming skills, and this is the third of his courses I've taken. You can be a total noob but you'll understand what's going on because everything is explained in detail. This course in particular is a masterpiece remastered.`,
+      images: [images.PostOne],
       likes: [1, 2, 3],
       comments: [],
       user: {
@@ -19,7 +19,7 @@ const initialState = {
     },
     {
       content: 'This is post two',
-      images: images.PostTwo,
+      images: [images.PostTwo],
       likes: [1, 2],
       comments: [],
       user: {
@@ -32,7 +32,7 @@ const initialState = {
     },
     {
       content: 'This is post three',
-      images: images.PostThree,
+      images: [images.PostThree],
       likes: [],
       comments: [],
       user: {
