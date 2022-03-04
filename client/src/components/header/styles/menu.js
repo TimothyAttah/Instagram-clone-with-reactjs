@@ -8,7 +8,7 @@ export const StyledMenu = styled.nav`
       justify-content: space-between;
       align-items: center;
       font-size: 20px;
-      padding: 0 10px;
+      padding: 0 15px;
       a {
         color: ${({ theme }) => theme.gray};
         :hover {

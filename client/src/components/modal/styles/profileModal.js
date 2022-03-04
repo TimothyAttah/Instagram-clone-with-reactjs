@@ -7,9 +7,9 @@ export const StyledProfileContainer = styled.div`
 export const StyledProfileMenuHandle = styled.div`
   display: flex;
   align-items: center;
-  /* padding-left: 50px; */
   position: relative;
   cursor: pointer;
+  padding-left: 15px;
 
   @media (max-width: 675px) {
     padding-left: 50px;
