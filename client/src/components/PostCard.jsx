@@ -1,4 +1,5 @@
 import React from 'react';
+import Comments from './comments/Comments';
 import CardBody from './postCard/CardBody';
 import CardFooter from './postCard/CardFooter';
 import CardHeader from './postCard/CardHeader';
@@ -11,6 +12,8 @@ const PostCard = ({ post }) => {
       <CardHeader post={post} />
       <CardBody post={post} />
       <CardFooter post={post} />
+
+      <Comments post={post} />
     </StyledPostsCard>
   );
 };
