@@ -1,0 +1,43 @@
+import {
+  RiHome4Fill,
+  RiSendPlaneFill,
+  RiHeartFill,
+  RiHeartLine,
+  RiCompass3Fill,
+  RiDeleteBin5Line,
+  RiCloseFill,
+  RiLoaderFill,
+  RiMore2Fill,
+  RiMoreFill,
+  RiSearchLine,
+  RiThumbUpFill,
+  RiThumbUpLine,
+  RiAccountCircleFill,
+  RiUser3Fill,
+  RiChat3Line,
+  RiEdit2Fill,
+  RiArrowDownSFill,
+} from 'react-icons/ri';
+
+const Icons = {
+  Home: RiHome4Fill,
+  FavoriteBold: RiHeartFill,
+  Favorite: RiHeartLine,
+  Discover: RiCompass3Fill,
+  Delete: RiDeleteBin5Line,
+  Close: RiCloseFill,
+  Comment: RiChat3Line,
+  MoreHoriz: RiMoreFill,
+  MoreVert: RiMore2Fill,
+  Loader: RiLoaderFill,
+  Search: RiSearchLine,
+  ThumbUpBold: RiThumbUpFill,
+  ThumbUp: RiThumbUpLine,
+  Edit: RiEdit2Fill,
+  User: RiUser3Fill,
+  UserMenu: RiAccountCircleFill,
+  Send: RiSendPlaneFill,
+  ArrowDown: RiArrowDownSFill,
+};
+
+export default Icons;
