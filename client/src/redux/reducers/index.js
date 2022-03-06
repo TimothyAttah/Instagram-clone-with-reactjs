@@ -1,7 +1,10 @@
 import { combineReducers } from 'redux';
+import { theme } from './themeReducer';
+import { posts } from './postReducer';
 
 const reducers = combineReducers({
-  hello: () => 1,
+  theme,
+  posts,
 });
 
 export default reducers;

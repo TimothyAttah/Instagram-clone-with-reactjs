@@ -1,5 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { GLOBAL_TYPES } from '../../redux/types';
 import Icons from '../icons/Icons';
 import { images } from '../images';
 import { StyledAvatar } from '../styles/avatar';
@@ -11,15 +13,19 @@ import {
 
 const ProfileModal = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  const [theme, setTheme] = useState(false);
+  const dispatch = useDispatch();
+  const { theme } = useSelector((state) => state);
 
   const handleClose = () => {
     setOpenMenu(false);
   };
 
   const handleLightDarkMode = () => {
+    dispatch({
+      type: GLOBAL_TYPES.THEME,
+      payload: !theme,
+    });
     // setOpenMenu(false);
-    setTheme(!theme);
   };
   return (
     <StyledProfileContainer>
@@ -35,10 +41,8 @@ const ProfileModal = () => {
       {openMenu && (
         <StyledProfileMenu>
           <li onClick={handleClose}>Profile</li>
-          <li>
-            <label htmlFor='theme' onClick={handleLightDarkMode}>
-              {theme ? 'Light mode' : 'Dark mode'}
-            </label>
+          <li onClick={handleLightDarkMode}>
+            <label htmlFor='theme'>{theme ? 'Light mode' : 'Dark mode'}</label>
           </li>
 
           <li onClick={handleClose}>Logout</li>

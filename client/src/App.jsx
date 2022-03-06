@@ -10,6 +10,7 @@ import {
 import theme from './themes/theme';
 import Home from './pages/Home';
 import ErrorPage from './pages/error/ErrorPage';
+import Posts from './pages/post/Posts';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
             <StyledMainContainer>
               <Routes>
                 <Route path='/' element={<Home />} />
+                <Route path='/posts' element={<Posts />} />
                 <Route path='*' element={<ErrorPage />} />
               </Routes>
             </StyledMainContainer>

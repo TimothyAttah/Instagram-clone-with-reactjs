@@ -9,7 +9,7 @@ export const navMenu = [
   },
   {
     label: 'Send',
-    path: '/send',
+    path: '/message',
     icon: <Icons.Send />,
   },
   {
@@ -19,7 +19,7 @@ export const navMenu = [
   },
   {
     label: 'Favorite',
-    path: '/favorite',
+    path: '/notify',
     icon: <Icons.FavoriteBold />,
   },
 ];
@@ -44,3 +44,12 @@ export const dummyUser = [
     fullName: 'Faith Ken',
   },
 ];
+
+export const auth = {
+  user: {
+    _id: '1',
+    username: 'user01',
+    followers: [],
+    following: [],
+  },
+};
