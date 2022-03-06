@@ -13,7 +13,7 @@ export const StyledCardIconMenu = styled.div`
   svg {
     margin: 10px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 24px;
   }
 `;
 
@@ -25,7 +25,7 @@ export const StyledCardInfo = styled.div`
   h6 {
     padding: 0 30px;
     cursor: pointer;
-    font-size: 13px;
-    font-weight: 400;
+    font-size: 15px;
+    font-weight: 500;
   }
 `;
